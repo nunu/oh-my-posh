@@ -196,7 +196,7 @@ func (e *Engine) renderBlock(block *config.Block, cancelNewline bool) bool {
 		return false
 	}
 
-	defer e.applyPowerShellBleedPatch()
+	// defer e.applyPowerShellBleedPatch()
 
 	// do not print a newline to avoid a leading space
 	// when we're printing the first primary prompt in
