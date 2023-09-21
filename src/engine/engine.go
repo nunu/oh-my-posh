@@ -165,7 +165,7 @@ func (e *Engine) getTitleTemplateText() string {
 }
 
 func (e *Engine) renderBlock(block *Block, cancelNewline bool) bool {
-	defer e.patchPowerShellBleed()
+	// defer e.patchPowerShellBleed()
 
 	// This is deprecated but we leave it in to not break configs
 	// It is encouraged to used "newline": true on block level
